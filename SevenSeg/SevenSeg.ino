@@ -1,6 +1,7 @@
 #include <Servo.h>
 
 Servo servo; 
+Servo s[NUM_SERVOS]; // array of servos
 
 const int NUM_SERVOS = 2; // change to 7
 
