@@ -1,9 +1,11 @@
 #include <Servo.h>
 
+const int NUM_SERVOS = 2; // change to 7
+
 Servo servo; 
 Servo s[NUM_SERVOS]; // array of servos
 
-const int NUM_SERVOS = 2; // change to 7
+
 
 int number = 0;
 
@@ -34,14 +36,14 @@ void setup() {
 }
 
 void loop() {
-  servo.write((BCDToSS[number%16][0] * 80) + 10);
-  delay(1000);
-  number++;
-  
-  for (int i = 0; i < NUM_SERVOS; i++)
-      s[i].write(90);
-  delay(2000);
-  for (int i = 0; i < NUM_SERVOS; i++)
-    s[i].write(0);
-  delay(2000);
+//  servo.write((BCDToSS[number%16][0] * 80) + 10);
+//  delay(1000);
+//  number++;
+//  
+//  for (int i = 0; i < NUM_SERVOS; i++)
+//      s[i].write(90);
+//  delay(2000);
+//  for (int i = 0; i < NUM_SERVOS; i++)
+//    s[i].write(0);
+//  delay(2000);
 }
